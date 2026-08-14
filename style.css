@@ -19,7 +19,7 @@ nav {
 }
 
 nav img {
-    width: 50px;
+    width: 200px;
     height: auto;
 }
 
@@ -29,9 +29,15 @@ nav img {
     gap: 15px;
     width: 500px;
     height: 40px;
-    padding: 0 15px;
-    font-size: 16px;
+    padding: 10 15px;
+    font-size: 20px;
     
+}
+
+.center input[type="text"] {
+    font-size: 16px;
+    padding: 8px 16px;
+    height: 40px;
 }
 
 .center input,button{
@@ -51,7 +57,7 @@ nav img {
 .youtubelogo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1px;
 }
 
 .cato{
@@ -85,4 +91,10 @@ nav img {
 .cato button.active{
     background-color:white;
     color: black;
+}
+
+.hamburger{
+    margin-left: 20px;
+    font-size: 28px;
+    cursor: pointer;
 }
