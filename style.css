@@ -63,6 +63,8 @@ nav img {
 .cato{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+
     gap: 12px;
 
     padding: 12px 20px;
@@ -70,6 +72,24 @@ nav img {
     overflow-x: auto;
 
     white-space: nowrap;
+
+    scrollbar-width: none;
+
+    flex: 1;
+}
+
+.cato::-webkit-scrollbar {
+    display: none;
+}
+
+.catocon{
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    width: 100%;
+    overflow: hidden;
 }
 
 .cato button{
@@ -84,7 +104,7 @@ nav img {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
-
+    flex-shrink: 0;
     cursor: pointer;
 }
 
@@ -130,8 +150,7 @@ nav img {
 
 .sidebar{
     position: fixed;
-    top: 70
-    px;
+    top: 70px;
     left: 0;
 
     width: 240px;
@@ -141,8 +160,6 @@ nav img {
 
     padding: 15px 10px;
 
-    transform: translateX(-100%);
-
     transition: transform 0.2s ease;
 
     z-index: 100;
@@ -151,12 +168,30 @@ nav img {
 .sidebar.open {
     transform: translateX(0);
 }
-main {
-    transition: margin-left 0.2s ease;
+
+.sidebar:not(.open) {
+    width: 72px;
+}
+
+.sidebar:not(.open) a{
+    text-align: center;
+    padding:15px 5px;
+}
+
+.sidebar:not(.open) span {
+    display: none;
 }
 
 main.sidebar-open {
     margin-left: 240px;
+    width: calc(100% - 240px);
+}
+
+main {
+
+    margin-left: 72px;
+    width: calc(100% - 72px);
+    transition: margin-left 0.2s ease, width 0.2s ease;
 }
 
 .sidebar a{
@@ -169,3 +204,12 @@ main.sidebar-open {
     
     border-radius: 8px;
 }
+
+.video-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    margin-left: 240px;
+    width: calc(100% - 240px);
+}
+

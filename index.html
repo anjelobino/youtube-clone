@@ -6,58 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>YouTube Clone</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="youtubelogo">
-            <button class="hamburger" id="hamburger">☰</button>
+            <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
             <img src="youtubelogo.png">
         </div>
         <div class="center">
             <input type="text" placeholder="Search"> 
-            <button>go</button>
-            <button class="mic">mic</button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div>
+                <button class="mic"><i class="fa-solid fa-microphone"></i></button>
+            </div>
+            
         </div>
         <div class="right">
-            <button class="create">+ Create</button>
-            <button class="notifications">bell</button>
+            <button class="create"><i class="fa-solid fa-video"></i> +Create</button>
+            <button class="notifications"><i class="fa-regular fa-bell"></i></button>
             <img src="account.png" alt="account">
         </div>
     </nav>
 
     <aside class="sidebar" id="sidebar">
-    <a href="#">🏠 Home</a>
-    <a href="#">◉ Shorts</a>
-    <a href="#">▣ Subscriptions</a>
+    <a href="#">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-bolt"></i>
+        <span>Shorts</span>
+    </a>
+    <hr>
+    <a href="#">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Subscriptions</span>
+    </a>
 
     <hr>
 
-    <a href="#">History</a>
-    <a href="#">Playlists</a>
-    <a href="#">Your videos</a>
+    <a href="#">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <span>History</span>
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-list-check"></i>
+        <span>Playlists</span>
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-circle-play"></i> 
+         <span>Your videos</span>
+    </a>
     </aside>
 
     <main id="main">
-        <div class="cato">
-            <button class="active">all</button>
-            <button>gaming</button>
-            <button>music</button>
-            <button>mixes</button>
-            <button>cinema</button>
-            <button>ai</button>
-            <button>spider man</button>
-            <button>minecraft</button>
-            <button>Tamil Cinema</button>
-            <button>Dramedy</button>
-            <button>Minecraft modding</button>
-            <button>AI</button>
-            <button>Computer Hardware</button>
-            <button>APIs</button>
-            <button>marvel</button>
+        <div class="catocon">
+            <button class="scrollleft" id="leftbtn"><</button>
+            <div class="cato" id="cato">
+                <button class="active">all</button>
+                <button>gaming</button>
+                <button>music</button>
+                <button>mixes</button>
+                <button>cinema</button>
+                <button>ai</button>
+                <button>spider man</button>
+                <button>minecraft</button>
+                <button>Tamil Cinema</button>
+                <button>Dramedy</button>
+                <button>Minecraft modding</button>
+                <button>AI</button>
+                <button>Computer Hardware</button>
+                <button>APIs</button>
+                <button>marvel</button>
+            </div>
+            <button class="scrollright" id="rightbtn">></button>
         </div>
-
     </main>
+
+    <div class="video-grid" id="videoGrid"></div>
+
     <script src="script.js"></script>
 </body>
