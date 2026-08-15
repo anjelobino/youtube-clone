@@ -209,7 +209,11 @@ main {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 40px;
+    margin-top: 40px;
     margin-left: 240px;
     width: calc(100% - 240px);
 }
 
+.video-open{
+    
+}

@@ -34,7 +34,7 @@ const videoGrid=document.getElementById("videoGrid");
 hamburger.addEventListener("click",function(){
     sidebar.classList.toggle("open");
     main.classList.toggle("sidebar-open")
-    
+    videoGrid.classList.toggle("video-open")
 });
 
 leftbtn.addEventListener("click",function(){
