@@ -42,8 +42,8 @@ nav img {
 
 .center input,button{
     border: none;
-    border-radius: 8px;
-
+    border-radius: 15px;
+    gap: 1px;
     padding: 8px 16px;
 
     background-color: #272727;
@@ -96,5 +96,76 @@ nav img {
 .hamburger{
     margin-left: 20px;
     font-size: 28px;
+    border-radius: 30px;
     cursor: pointer;
+}
+
+.right button{
+    border: none;
+    border-radius: 15px;
+    gap: 5px;
+    padding: 8px 16px;
+
+    background-color: #272727;
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.right img{
+
+    width: 40px;
+    height: auto;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 70
+    px;
+    left: 0;
+
+    width: 240px;
+    height: calc(100vh - 64px);
+
+    background-color: #000000;
+
+    padding: 15px 10px;
+
+    transform: translateX(-100%);
+
+    transition: transform 0.2s ease;
+
+    z-index: 100;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+main {
+    transition: margin-left 0.2s ease;
+}
+
+main.sidebar-open {
+    margin-left: 240px;
+}
+
+.sidebar a{
+    display: block;
+    
+    padding: 12px 15px;
+    
+    color: white;
+    text-decoration: none;
+    
+    border-radius: 8px;
 }
