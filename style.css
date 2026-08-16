@@ -26,7 +26,7 @@ nav img {
 .center{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     width: 500px;
     height: 40px;
     padding: 10 15px;
@@ -52,6 +52,77 @@ nav img {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+
+    width: 500px;
+    height: 40px;
+
+    border: 1px solid #303030;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    background-color: #121212;
+}
+
+.searchbox input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    padding: 0 18px;
+
+    background-color: transparent;
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.searchbox input::placeholder {
+    color: #aaa;
+}
+
+.searchbtn {
+    width: 64px;
+    height: 100%;
+
+    border: none;
+    border-left: 1px solid #303030;
+    border-radius: 0;
+
+    background-color: #222222;
+    color: white;
+
+    cursor: pointer;
+}
+
+.searchbtn:hover {
+    background-color: #303030;
+}
+
+.mic {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #222222;
+    color: white;
+
+    cursor: pointer;
+}
+
+.hr{
+    color: #303030;
 }
 
 .youtubelogo {
@@ -153,7 +224,7 @@ nav img {
     top: 70px;
     left: 0;
 
-    width: 240px;
+    width: 190px;
     height: calc(100vh - 64px);
 
     background-color: #000000;
@@ -207,13 +278,46 @@ main {
 
 .video-grid{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 40px;
-    margin-top: 40px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    margin-left: 72px;
+    width: calc(100% - 72px);
+
+    padding: 20px 20px;
+}
+
+.video-open{
     margin-left: 240px;
     width: calc(100% - 240px);
 }
 
-.video-open{
+.video-card img{
+    width:100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius:10px;
+    display: block;
     
+    
+}
+
+.video-card h3{
+    margin: 10px 0 6px;
+    font-family: "Roboto",sans-serif;
+    font-size:16px;
+    line-height:22px;
+    font-weight:500;
+    color: #f1f1f1;
+}
+
+.video-card p {
+    margin: 3px 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+    color: #aaaaaa;
 }
