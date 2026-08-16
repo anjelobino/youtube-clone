@@ -27,14 +27,75 @@ const videos=[
         channel:"code",
         views:"120k views",
         time:"3 days ago"
+    },
+
+    {
+        thumbnail:"thumb4.png",
+        title:"learn react.js",
+        channel:"code",
+        views:"120k views",
+        time:"3 days ago"
+    },
+
+    {
+        thumbnail:"thumb5.png",
+        title:"learn react.js",
+        channel:"code",
+        views:"120k views",
+        time:"3 days ago"
+    },
+
+    {
+        thumbnail:"thumb6.png",
+        title:"learn react.js",
+        channel:"code",
+        views:"120k views",
+        time:"3 days ago"
     }
 ];
+
+const shorts=[
+    {
+        thumb:"short1.png",
+        title:"UEFA champions league"
+    },
+
+    {
+        thumb:"short2.png",
+        title:"learn espania"
+    },
+
+    {
+        thumb:"short3.png",
+        title:"learn espania"
+    },
+
+    {
+        thumb:"short4.png",
+        title:"learn espania"
+    },
+
+    {
+        thumb:"short5.png",
+        title:"learn espania"
+    },
+
+    {
+        thumb:"short6.png",
+        title:"learn espania"
+    }
+];
+
 const videoGrid=document.getElementById("videoGrid");
+const shortsgrid=document.getElementById("shortsgrid")
+const shortshead=document.getElementById("shortshead")
 
 hamburger.addEventListener("click",function(){
     sidebar.classList.toggle("open");
     main.classList.toggle("sidebar-open")
     videoGrid.classList.toggle("video-open")
+    shortsgrid.classList.toggle("short-open")
+    shortshead.classList.toggle("shortshead-open")
 });
 
 leftbtn.addEventListener("click",function(){
@@ -56,4 +117,15 @@ videos.forEach(function(video) {
         <p>${video.views}•${video.time}</p>
     `;
     videoGrid.appendChild(card);
+});
+
+shorts.forEach(function(short){
+
+    const element=document.createElement("div");
+    element.classList.add("shorts-card");
+    element.innerHTML=`
+        <img src="${short.thumb}" alt="video">
+        <p>${short.title}</p>
+    `;
+    shortsgrid.appendChild(element);
 });
