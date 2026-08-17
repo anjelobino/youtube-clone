@@ -7,42 +7,42 @@ const cato = document.getElementById("cato");
 const videos=[
     {
         thumbnail:"thumb1.png",
-        title:"learn javascript",
-        channel:"bro code",
-        views:"120k views",
+        title:"UEFA Champions League Barcelona vs Atletico Madrid",
+        channel:"Sony LIV",
+        views:"555k views",
         time:"2 days ago"
     },
 
     {
         thumbnail:"thumb2.png",
-        title:"bulding a youtube clone",
-        channel:"addox web",
+        title:"Learn any language in 3 Months",
+        channel:"alexx",
         views:"85k views",
         time:"1 week ago"
     },
 
     {
         thumbnail:"thumb3.png",
-        title:"learn react.js",
-        channel:"code",
+        title:"Learn any language for FREE",
+        channel:"slexx",
         views:"120k views",
         time:"3 days ago"
     },
 
     {
         thumbnail:"thumb4.png",
-        title:"learn react.js",
+        title:"Avengers:Infinity War|Thor",
         channel:"code",
         views:"120k views",
-        time:"3 days ago"
+        time:"1 month ago"
     },
 
     {
         thumbnail:"thumb5.png",
-        title:"learn react.js",
-        channel:"code",
+        title:"Doomsday Trailer Decodeing",
+        channel:"The canedian lad",
         views:"120k views",
-        time:"3 days ago"
+        time:"1 hour ago"
     },
 
     {
@@ -57,17 +57,17 @@ const videos=[
 const shorts=[
     {
         thumb:"short1.png",
-        title:"UEFA champions league"
+        title:"Harley-Davidson 440T review"
     },
 
     {
         thumb:"short2.png",
-        title:"learn espania"
+        title:"Marvel Avengers:Secret Wars #sdcc2022"
     },
 
     {
         thumb:"short3.png",
-        title:"learn espania"
+        title:"Ferran to psg 'Here We Go'"
     },
 
     {
@@ -77,12 +77,12 @@ const shorts=[
 
     {
         thumb:"short5.png",
-        title:"learn espania"
+        title:"robotics Project #esp32"
     },
 
     {
         thumb:"short6.png",
-        title:"learn espania"
+        title:"Man city vs Arsenal"
     }
 ];
 
